@@ -77,5 +77,46 @@
    </plugins>
    
    </build>
+   <repositories>
+	  <repository>
+      <id>activiti</id>
+      <name>Activiti</name>
+      <url>https://maven.alfresco.com/nexus/content/repositories/activiti/</url>
+    </repository>
+    <repository>
+      <id>activiti-third-party</id>
+      <name>Activiti third party</name>
+      <url>https://maven.alfresco.com/nexus/content/repositories/activiti-thirdparty/</url>
+    </repository>
+    <repository>
+      <id>jboss</id>
+      <name>JBoss Repository</name>
+      <url>http://repository.jboss.org/nexus/content/groups/public</url>
+    </repository>
+    <repository>
+      <id>maven-restlet</id>  
+      <name>Public online Restlet repository</name>  
+      <url>http://maven.restlet.org</url>  
+    </repository>
+    <repository>
+      <id>vaadin-addons</id>
+      <url>http://maven.vaadin.com/vaadin-addons</url>
+    </repository>
+</repositories>
+   
+    <pluginRepositories>
+    <pluginRepository>
+      <id>maven2.java.net</id>
+      <name>Java.net Repository for Maven 2</name>
+      <url>http://download.java.net/maven/2/</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>sonatype-snapshot-repo</id>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <url>https://repository.sonatype.org/content/repositories/apache-snapshots</url>
+    </pluginRepository>
+  </pluginRepositories>
  
 </project>
