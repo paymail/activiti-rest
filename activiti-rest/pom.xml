@@ -11,7 +11,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
      <jdk.version>1.7</jdk.version>
-    <activiti.version>5.15-SNAPSHOT</activiti.version>
+    <activiti.version>5.14</activiti.version>
     <slf4j.version>1.7.2</slf4j.version>
     <spring.framework.version>3.1.2.RELEASE</spring.framework.version>
     <commons.io.version>2.0.1</commons.io.version>
@@ -23,7 +23,7 @@
   </properties>
   
   <dependencies>
-     <dependency>
+      <dependency>
       <groupId>org.activiti</groupId>
       <artifactId>activiti-rest</artifactId>
        <version>${activiti.version}</version>
@@ -38,7 +38,7 @@
       <groupId>org.activiti</groupId>
       <artifactId>activiti-spring</artifactId>
       <version>${activiti.version}</version>
-    </dependency>
+    </dependency>  
     
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -78,11 +78,18 @@
    
    </build>
    <repositories>
-	  <repository>
+   
+  <!--    <repository>
+       <id>Alfresco Maven Repository</id>
+        <url>https://maven.alfresco.com/nexus/content/groups/public/</url> 
+      <url>https://maven.alfresco.com/nexus/content/repositories/activiti/</url> 
+    </repository> -->
+   
+	<repository>
       <id>activiti</id>
       <name>Activiti</name>
-      <url>https://maven.alfresco.com/nexus/content/repositories/activiti/</url>
-    </repository>
+        <url>https://maven.alfresco.com/nexus/content/repositories/activiti/</url> 
+    </repository> 
     <repository>
       <id>activiti-third-party</id>
       <name>Activiti third party</name>
