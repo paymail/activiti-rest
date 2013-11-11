@@ -20,6 +20,7 @@
     <org.restlet.version>2.0.15</org.restlet.version>
     <servlet.api.version>2.4</servlet.api.version>
     <commons-dbcp.version>1.4</commons-dbcp.version>
+    <mysqlcon.version>5.1.13</mysqlcon.version>
   </properties>
   
   <dependencies>
@@ -53,10 +54,15 @@
       <artifactId>commons-dbcp</artifactId>
       <version>${commons-dbcp.version}</version>
     </dependency>
-    <dependency>
+ <!--    <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
        <version>${h2.version}</version>
+    </dependency> --> 
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysqlcon.version}</version>
     </dependency>
 
   </dependencies>
